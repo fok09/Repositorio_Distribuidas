@@ -1,9 +1,14 @@
 package bean;
 
+import java.io.Serializable;
 import java.util.Vector;
 
-public class ItemVentaView 
+public class ItemVentaView implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Vector<String> detalle;
 	public ItemVentaView(int codigo,String nombre,float precio, int cantidad)
 	{

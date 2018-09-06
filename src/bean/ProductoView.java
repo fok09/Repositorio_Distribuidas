@@ -1,7 +1,13 @@
 package bean;
 
-public class ProductoView 
+import java.io.Serializable;
+
+public class ProductoView implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int codigo;
 	private String nombre;
 	private Float precio;
