@@ -8,6 +8,9 @@ import bean.VentaView;
 
 public interface TDASistemaCine extends Remote
 {
+	
+	//public TDASistemaCine getInstance() throws RemoteException;
+	
 	public VentaView iniciarVenta() throws RemoteException;
 	
 	public void agregarProducto(ProductoView prod, int cantidad) throws RemoteException;
