@@ -37,4 +37,6 @@ public interface TDASistemaCine extends Remote
 		
 	public ProductoView buscarCombo(String nombre) throws RemoteException;
 
+	public Vector<Vector<String>> getListadoProductos();
+
 }
