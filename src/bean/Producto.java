@@ -15,9 +15,6 @@ import javax.persistence.Table;
 @Table(name = "producto")
 public abstract class Producto implements Serializable
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -34,8 +31,7 @@ public abstract class Producto implements Serializable
 	public Producto() 
 	{
 	}
-	
-	
+		
 	public int getCodigo() {
 		return codigo;
 	}
@@ -44,9 +40,6 @@ public abstract class Producto implements Serializable
 		this.codigo = codigo;
 	}
 	
-	public abstract ProductoView getView();
-	public abstract float getPrecio();
-
 	public String getNombre() {
 		return nombre;
 	}
@@ -54,4 +47,8 @@ public abstract class Producto implements Serializable
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+	
+	public abstract ProductoView getView();
+	
+	public abstract float getPrecio();
 }

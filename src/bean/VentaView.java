@@ -1,14 +1,10 @@
 package bean;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
 public class VentaView implements Serializable
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private int numero;
 	private String fecha;

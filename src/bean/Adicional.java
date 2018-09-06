@@ -11,14 +11,9 @@ import javax.persistence.Table;
 @PrimaryKeyJoinColumn(name="codigo") 
 public class Adicional extends Producto implements Serializable
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-	
 	private String tipo;
 	private float precio;
-
 
 	public Adicional(String nombre, float precio, String tipo) {
 

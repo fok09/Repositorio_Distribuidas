@@ -20,12 +20,7 @@ import javax.persistence.Table;
 @Table(name="ventas")
 public class Venta implements Serializable
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	
-	private static int proximoNumero;
+	private static final long serialVersionUID = 1L;	
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

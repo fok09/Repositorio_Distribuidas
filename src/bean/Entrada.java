@@ -11,12 +11,7 @@ import javax.persistence.Table;
 @PrimaryKeyJoinColumn(name="codigo") 
 public class Entrada extends Producto implements Serializable
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-	
-//	private String pelicula;
 	private String sala;
 	private String horario;
 	private float precio;

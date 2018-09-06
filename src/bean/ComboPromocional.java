@@ -10,7 +10,6 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
@@ -19,11 +18,7 @@ import javax.persistence.Table;
 @PrimaryKeyJoinColumn(name="codigo") 
 public class ComboPromocional extends Producto implements Serializable
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-	
 	private float descuento;
 		
 	@ManyToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
@@ -32,7 +27,8 @@ public class ComboPromocional extends Producto implements Serializable
 	//@OneToMany
 	private List<Producto> productos;
 	
-	public ComboPromocional(float descuento, String nombre, ArrayList<Producto> productos) {
+	public ComboPromocional(float descuento, String nombre, ArrayList<Producto> productos)
+	{
 		super(nombre);
 		this.descuento = descuento;
 		this.productos = productos;
